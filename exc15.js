@@ -1,15 +1,15 @@
 function makanTerusRekursif(waktu) {
-  // you can only write your code here!
-  count = 1;
-  if ( waktu === 0) {
+    count = 1;
+    // you can only write your code here!
+  if ( waktu <= 0) {
       return 0;
-  } else if ( waktu <= 15) {
-    return 1;
-  } else {
-      makanTerusRekursif(waktu-15);
-      count += 1;
-      return count;
-  }
+    } else if ( waktu <= 15) {
+        return 1;
+    } else {
+        makanTerusRekursif(waktu-15);
+        // console.log(count);
+        return count += 1;
+    }
 }
 
 // TEST CASES
